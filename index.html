@@ -92,7 +92,7 @@
                         <td>' + (feature.properties['Kategori'] !== null ? autolinker.link(feature.properties['Kategori'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Grafik</strong><br />' + (feature.properties['Grafik'] !== null ? '<img src="images/' + String(feature.properties['Grafik']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>Grafik</strong><br />' + (feature.properties['Grafik'] !== null ? '<img src="images/' + String(feature.properties['Grafik']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
